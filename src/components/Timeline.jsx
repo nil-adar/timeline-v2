@@ -3,7 +3,6 @@
 import React from 'react';
 import './Timeline.css';
 import gun from '../assets/gun.png'
-import fire from '../assets/fire.png'
 import tornado from '../assets/tornado.png'
 import tsunami from '../assets/tsunami.png'
 import volcano from '../assets/volcano.png'
@@ -11,9 +10,12 @@ import human from '../assets/human.png'
 import alert from '../assets/alert.png'
 import bomb from '../assets/bomb.webp'
 import m16 from '../assets/m16.webp'
+import fight from '../assets/fight.webp'
+import news from '../assets/news.webp'
+
 function chooseImage(event) {
   
-  let images = [fire,alert,bomb,gun,human,m16]
+  let images = [m16,alert,bomb,gun,human,m16,news,fight,m16,news]
   let randomIndex = Math.floor(Math.random() * images.length)
   return images[randomIndex]
 }
