@@ -1,0 +1,44 @@
+{
+  "events": [
+    {
+      "id": 1,
+      "title": "Establishment of the State of Israel",
+      "date": "1948-05-14",
+      "location": "Tel Aviv, Israel",
+      "description": "David Ben-Gurion proclaimed the establishment of the State of Israel.",
+      "categories": ["israeliEvents", "historic"]
+    },
+    {
+      "id": 2,
+      "title": "The Six-Day War",
+      "date": "1967-06-05",
+      "location": "Israel and neighboring countries",
+      "description": "Israel fought against Egypt, Jordan, and Syria, significantly altering the political landscape of the Middle East.",
+      "categories": ["israeliEvents", "wars"]
+    },
+    {
+      "id": 3,
+      "title": "Peace Treaty with Egypt",
+      "date": "1979-03-26",
+      "location": "Washington, D.C., USA",
+      "description": "Israel and Egypt signed a peace treaty, the first between Israel and an Arab country.",
+      "categories": ["israeliEvents", "historic"]
+    },
+    {
+      "id": 4,
+      "title": "Oslo Accords",
+      "date": "1993-09-13",
+      "location": "Washington, D.C., USA",
+      "description": "The Oslo Accords were signed between Israel and the PLO, aiming to resolve the Israeli-Palestinian conflict.",
+      "categories": ["israeliEvents"]
+    },
+    {
+      "id": 5,
+      "title": "Operation Entebbe",
+      "date": "1976-07-04",
+      "location": "Entebbe, Uganda",
+      "description": "Israeli commandos rescued hostages from a hijacked Air France flight at Entebbe Airport.",
+      "categories": ["israeliEvents", "wars"]
+    }
+  ]
+}

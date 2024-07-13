@@ -1,0 +1,166 @@
+/* App.css */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 100%;
+}
+
+.day-mode {
+  width: 100%;
+  background-color: #ffffff;
+  color: #f9f9f9;
+}
+
+.night-mode {
+  background-color: #282c34;
+  color: #ffffff;
+}
+
+.night-mode .App-header {
+  color: #ffffff;
+}
+
+.night-mode .event-details-page {
+  background-color: #333;
+  color: #ffffff;
+}
+
+.day-mode .event-details-page {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.App-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  margin: 5px;
+}
+
+select {
+  margin: 20px 0;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background: #f9f9f9;
+  margin: 10px 0;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(196, 9, 9, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.night-mode li {
+  background: #333;
+  color: white;
+}
+
+li:hover {
+  transform: translateY(-5px);
+}
+
+h2 {
+  margin: 0 0 10px;
+}
+
+p {
+  margin: 5px 0;
+}
+
+.event-details-page {
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  max-width: 600px;
+  margin: auto;
+  position: relative;
+}
+
+.event-details-page .back-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px 10px;
+  background: red;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Timeline.css */
+
+
+
+.timeline-event {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  position: relative;
+  width: 80%;
+}
+
+.timeline-dot {
+  width: 20px;
+  height: 20px;
+  background-color: #007bff;
+  border-radius: 50%;
+  position: absolute;
+  left: -30px;
+}
+
+.timeline-content {
+  background: #f9f9f9;
+  padding: 10px 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  margin-left: 40px;
+  color: black;
+}
+
+.day-mode .timeline-content {
+  background: #636363;
+  color: black;
+}
+
+.night-mode .timeline-content {
+  background: #7d7d7d;
+  color: white;
+}
+
+.timeline-content h3 {
+  margin: 0 0 10px;
+}
+
+.timeline-content p {
+  margin: 5px 0;
+}
