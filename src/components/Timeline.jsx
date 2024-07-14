@@ -12,10 +12,10 @@ import bomb from '../assets/bomb.webp'
 import m16 from '../assets/m16.webp'
 import fight from '../assets/fight.webp'
 import news from '../assets/news.webp'
-
+import timenews from '../assets/timenews.png'
 function chooseImage(event) {
   
-  let images = [m16,alert,bomb,gun,human,m16,news,fight,m16,news]
+  let images = [m16,alert,bomb,gun,human,m16,news,fight,m16,news,volcano,tsunami,timenews]
   let randomIndex = Math.floor(Math.random() * images.length)
   return images[randomIndex]
 }
