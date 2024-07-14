@@ -16,7 +16,7 @@ export async function getHistoricalEvents(
         return cache
     }*/
     const response = await axios.get(
-        `https://api.predicthq.com/v1/events?category=${category}&start.gte=${start}&end.lte=${end}`,
+        `https://api.predicthq.com/v1/events?category=${category}&start.gte=${start}&end.lte=${end}&limit=150`,
         {
             headers: {
                 'Accept': 'application/json',

@@ -22,20 +22,21 @@ function chooseImage(event) {
 
 function redByStrength(i) {
   let r = 240
-  let g = ((i*2 - 0) * (165 - 0)) / (10 - 0)
+  let g = ((Math.min(10,i*2) - 0) * (165 - 0)) / (10 - 0)
   let b = 0
   return `rgb(${r},${g},${b})`
 }
 
 const Timeline = ({ events,isNightMode }) => {
   return (
-    <div className='my-[2rem] max-w-full  no-scrollbar overflow-x-scroll overflow-y-visible'>
-      <div className='flex flex-row '>
+    <div className='my-[2rem] w-full  no-scrollbar overflow-x-scroll overflow-y-visible'>
+      <div className='flex flex-row w-full px-[1rem] overflow-x-scroll no-scrollbar' style={{
+          background: isNightMode ? 'rgba(0,0,0,0.2)' : 'whitesmoke'
+      }}>
 
       {events.map((event, index) => (
         <div key={event.id} className='py-[.5rem] h-[800px] w-[200px] flex items-center  no-scrollbar  relative'
         style={{
-          background: isNightMode ? 'rgba(0,0,0,0.2)' : 'whitesmoke'
         }}>
           {/*<div className="timeline-dot"></div> */}
         
