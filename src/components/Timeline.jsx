@@ -30,7 +30,7 @@ function redByStrength(i) {
 const Timeline = ({ events,isNightMode }) => {
   return (
     <div className='my-[2rem] w-full  no-scrollbar overflow-x-scroll overflow-y-visible'>
-      <div className='flex flex-row w-full px-[1rem] overflow-x-scroll no-scrollbar' style={{
+      <div className='flex flex-row w-full px-[1rem] overflow-x-scroll scrollbar' style={{
           background: isNightMode ? 'rgba(0,0,0,0.2)' : 'whitesmoke'
       }}>
 
