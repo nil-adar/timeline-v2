@@ -145,24 +145,16 @@ p {
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   width: 100%;
-  margin-left: 40px;
-  color: black;
 }
 
-.day-mode .timeline-content {
-  background: #636363;
-  color: black;
+@media (max-width: 640px) {
+  .timeline-event {
+    width: 90%; /* Better fit for smaller devices */
+  }
 }
 
-.night-mode .timeline-content {
-  background: #7d7d7d;
-  color: white;
-}
-
-.timeline-content h3 {
-  margin: 0 0 10px;
-}
-
-.timeline-content p {
-  margin: 5px 0;
+@media (max-width: 1024px) {
+  .timeline-event {
+    width: 60%; /* Adjusted width for tablets */
+  }
 }
