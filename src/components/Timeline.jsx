@@ -1,5 +1,5 @@
 // this timeline component is for show visualization of events here we show the event in timeline way
-
+// Importing React library
 import React from 'react';
 import './Timeline.css';
 import gun from '../assets/gun.png'
@@ -13,13 +13,14 @@ import m16 from '../assets/m16.webp'
 import fight from '../assets/fight.webp'
 import news from '../assets/news.webp'
 import timenews from '../assets/timenews.png'
-function chooseImage(event) {
+// importing few imagees that related to topic of the timeline  
+function chooseImage(event) {// this  function for randomly choose an image for an  relevant event
   
   let images = [m16,alert,bomb,gun,human,m16,news,fight,m16,news,volcano,tsunami,timenews]
   let randomIndex = Math.floor(Math.random() * images.length)
   return images[randomIndex]
 }
-
+// this Function to calculate and return a color based on event 
 function redByStrength(i) {
   let r = 240
   let g = ((Math.min(10,i*2) - 0) * (165 - 0)) / (10 - 0)
@@ -97,5 +98,5 @@ const Timeline = ({ events,isNightMode }) => {
 
   );
 };
-
+// Exporting the Timeline component for use in other parts of the application
 export default Timeline;

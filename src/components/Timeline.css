@@ -1,5 +1,5 @@
 .timeline {
-  
+  /*  this the main timeline container: positions the timeline centrally, and allows horizontal scrolling for wide timelines */
   position: relative;
   display: flex;
   flex-direction: column;
@@ -24,6 +24,7 @@
   position: absolute;
   left: -30px;
 }
+/* Content box for each event: includes background, padding, and shadow for better readability and visual appeal */
 
 .timeline-content {
   background: #f9f9f9;
@@ -68,7 +69,7 @@
   }
 }
 */
-
+/* Responsive media query for small and  wide screens its work well from small size phone like iphone se 320 px and to for more larger scerrn like ipad pro its  scales down the timeline container and adjusts positioning to fit screen */
 @media only screen and (max-width: 1500px) {
   .timeline-container {
     transform: scale(0.7) translateY(-250px) translateX(-200px) !important;
