@@ -41,3 +41,38 @@
 .timeline-content p {
   margin: 5px 0;
 }
+/* 
+@media (max-width: 640px) {
+  .timeline-event {
+      flex-direction: column; 
+      width: 90%; 
+      padding: 1rem; 
+      margin-bottom: 1rem; 
+  }
+
+  .timeline-dot {
+      position: relative; 
+      top: -10px; 
+      left: 50%; 
+      transform: translateX(-50%); /
+  }
+
+  .timeline-content {
+      width: 100%; 
+      padding: 1rem; 
+      margin-top: 0.5rem; 
+  }
+
+  body {
+      font-size: 14px; 
+  }
+}
+*/
+
+@media only screen and (max-width: 1500px) {
+  .timeline-container {
+    transform: scale(0.7) translateY(-250px) translateX(-200px) !important;
+    width:1000px !important;
+    overflow-x: visible !important;
+  }
+}
