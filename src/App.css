@@ -5,22 +5,22 @@ body {
   padding: 0;
   font-family: Arial, sans-serif;
 }
-
+/* Main application container: centers content and sets up a flexible column layout*/
 .App {
-  
+ 
   text-align: center;
   display: flex;
   flex-direction: column;
   width: 100%;
   max-width: 100%;
 }
-
+/* Day mode styling: light background with light text */  
 .day-mode {
   width: 100%;
   background-color: #ffffff;
   color: #f9f9f9;
 }
-
+/* Night mode styling: dark themes for better readability in low light */
 .night-mode {
   background-color: #282c34;
   color: #ffffff;
